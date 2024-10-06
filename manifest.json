@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "ITI",
+  "description": "viw",
+  "version": "0.1.0",
+  "icons": {
+    "128":"icons/iti-foto.png"
+    },
+  "author": "Хороший человек",
+  "action": {},
+  "background": {},
+  "content_scripts": [
+    {
+      "matches": ["https://viw.im/*"],
+      "js": ["iti.js"]
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "scripting",
+    "debugger",
+    "activeTab"
+  ]
+}
